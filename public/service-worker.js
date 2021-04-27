@@ -2,25 +2,25 @@ const CACHE_NAME = "static-cache-v2";
 const DATA_CACHE_NAME = "data-cache-v1";
 
 const FILES_TO_CACHE = [
-    '/',
-    '/index.html',
-    '/manifest.webmanifest',
-    '/assets/style.css',
-    '/index.js',
-    '/assets/images/icons/budget72.png',
-    '/assets/images/icons/budget96.png',
-    '/assets/images/icons/budget128.png',
-    '/assets/images/icons/budget144.png',
-    '/assets/images/icons/budget152.png',
-    '/assets/images/icons/budget192.png',
-    '/assets/images/icons/budget384.png',
-    '/assets/images/icons/budget512.png',
+    './',
+    './index.html',
+    './manifest.webmanifest',
+    './styles.css',
+    './index.js',
+    './assets/images/icons/budget72.png',
+    './assets/images/icons/budget96.png',
+    './assets/images/icons/budget128.png',
+    './assets/images/icons/budget144.png',
+    './assets/images/icons/budget152.png',
+    './assets/images/icons/budget192.png',
+    './assets/images/icons/budget384.png',
+    './assets/images/icons/budget512.png',
 ];
 
 
 // install
 self.addEventListener("install", function (evt) {
-    // pre cache image data
+    // pre cache transaction data
     evt.waitUntil(
         caches.open(DATA_CACHE_NAME).then((cache) => cache.add("/api/transaction"))
     );
@@ -52,9 +52,6 @@ self.addEventListener("activate", function (evt) {
     self.clients.claim();
 });
 
-self.addEventListener('fetch', function (evt) {
-    // code to handle requests goes here
-});
 
 // // fetch
 self.addEventListener("fetch", function (evt) {
