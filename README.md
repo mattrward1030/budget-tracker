@@ -13,7 +13,7 @@ To install this repo on your local drive you would have to clone the ssh key fro
 If you want to use this program on the front end then simply click on the link in the finished project section of this read me. To see the offline functionality in use go into the url input at the top of the web page and click on the install budget tracker icon at the right hand side and you will be able to download a PWA of this application that will work entirely offline. If you would like to tinker with the back-end, first do a git clone as previously described. Once you have the all the folders in your vs code, make sure you do a npm install in the command line to install all the dependencies listed in the package.json. Then go to the server.js file and check the port you are listening on and make sure you are able to spin up a localhost:[PORT NUM]. Go into the intergrated terminal and run the command npm start. This will spin up a local server enabling you to make changes in your editor of choice and see them in the browser. 
 
 ## Finished project
-Check out the live application on <a href="https://ancient-taiga-78237.herokuapp.com/">Heroku!</a>
+Check out the live application on <a href="https://gentle-sea-15352.herokuapp.com/">Heroku!</a>
 
 <img src="./public/assets/images/application1.png" alt="adding expense offline">
 <img src="./public/assets/images/application2.png" alt="expense added">
@@ -34,7 +34,7 @@ Check out the live application on <a href="https://ancient-taiga-78237.herokuapp
 <li>Service-worker handles all of the static and data caching. </li>
 <li>Uses the node modules Mongoose, Express, Morgan, lite-server and compression</li>
 <li>The Gzip compression enables faster loading of the webpage.</li>
-<li>Application is hosted live on <a href="https://ancient-taiga-78237.herokuapp.com/">Heroku!</a>.</li>
+<li>Application is hosted live on <a href="https://gentle-sea-15352.herokuapp.com/">Heroku!</a>.</li>
 </ul>
 
 ## Tests
