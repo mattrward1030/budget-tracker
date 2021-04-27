@@ -56,13 +56,6 @@ self.addEventListener("activate", function (evt) {
 // // fetch
 self.addEventListener("fetch", function (evt) {
 
-    if (
-        evt.request.method !== `GET` ||
-        !evt.request.url.startsWith(self.location.origin)
-    ) {
-        evt.respondWith(fetch(evt.request));
-        return;
-    }
     // cache successful requests to the API
     if (evt.request.url.includes("/api/")) {
         evt.respondWith(
